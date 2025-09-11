@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:opsz,wght@9..144,100..900&display=swap");
 
 .cuerpo {
-    background-color: #2a66b0;
+  background-color: #2a66b0;
 }
 
 .navbar-brand.titulo {
@@ -14,14 +14,107 @@
 }
 
 .titulo {
-    color: #f80606;
-    text-align: center;
+  color: #f80606;
+  text-align: center;
 }
 
 .navbar-nav {
-    
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+button {
+  display: block;
+  padding: 10px;
+  background-color: #20D2D8;
+  /* Color de fondo */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #555454;
+  color: white;
+  /* Color del texto */
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #555454;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
+button:hover {
+  background-color: #2a66b0;
+  /* Color de fondo al pasar el mouse */
+}
+
+button:active {
+  transform: translateY(1px);
+  /* Un ligero movimiento hacia abajo para simular un "clic" */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  /* Una sombra más pequeña cuando está "presionado" */
+}
+
+.carousel-inner {
+  max-height: 400px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  height: 400px;
+}
+
+.carousel-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cuadro-base {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  padding-bottom: 2rem;
+  color: #000000;
+  height: 400px;
+}
+
+/* Estilos específicos para las secciones de contenido */
+.cuadro-contenido h2 {
+  color: #424C57;
+  border-bottom: 2px solid #2a66b0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cuadro-contenido h5 , h6{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.custom-footer {
+  background-color: #424C57;
+  margin-top: auto;
+}
+
+.custom-footer .nav-link, p {
+  color: white !important;
+  margin:10px ;
+  /* Texto blanco para los enlaces */
+}
+
+.custom-footer .nav-link:hover {
+  color: #cccccc !important;
+  /* Color al pasar el mouse */
+}
+
+.custom-footer .text-body-secondary {
+  color: #cccccc !important;
+  /* Color para el texto de copyright */
+}
