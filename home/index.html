@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="..\styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAFE Rescue - Pagina principal</title>
-    <link rel="stylesheet" href="..\styles.css">
     <link rel="icon" href="sr_logo.png" type="image/x-icon">
 
 
@@ -24,8 +25,10 @@
 <body class="cuerpo">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <img src="..\resources\sr_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-            <a class="navbar-brand titulo" href="index.html">SAFE Rescue</a>
+            <div class="logo-brand">
+                <img src="..\resources\sr_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top " id="logo" >
+                <a class="navbar-brand titulo" href="../home/index.html">SAFE Rescue</a>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,16 +36,21 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
                 <form class="d-flex mx-auto" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <input class="form-control me-2 buscador" id="buscador-navbar" type="search" placeholder="Buscar" aria-label="Search" />
                 </form>
 
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link disabled" aria-disabled="true">Mapa</a>
-                    <a class="nav-link" href="#">Incidentes</a>
-                    <a class="nav-link" href="#">Generar reporte</a>
-                    <a class="nav-link" href="#">Generar alerta</a>
-                    <a class="nav-link" href="..\donar\donar.html">Donaciones</a>
-                    <a class="nav-link" href="#"><button>Iniciar Sesión</button></a>
+                <div class="navbar-nav ms-auto ">
+                    <a class="nav-link disabled" id="text-a-navbar" aria-disabled="true">Mapa</a>
+                        <a class="espaciador-navbar color-10-1">|</a>
+                    <a class="nav-link color-11" id="text-a-navbar"href="#">Incidentes</a>
+                        <a class="espaciador-navbar color-10-1">|</a>
+                    <a class="nav-link color-11" id="text-a-navbar" href="#">Generar reporte</a>
+                        <a class="espaciador-navbar color-10-1">|</a>
+                    <a class="nav-link color-11" id="text-a-navbar" href="#">Generar alerta</a>
+                        <a class="espaciador-navbar color-10-1">|</a>
+                    <a href="../donar/donar.html" class="nav-link">Donar</a>
+
+                    <a class="nav-link color-11 " href="#"><button class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar Sesión</button></a>
                 </div>
 
             </div>
