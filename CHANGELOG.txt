@@ -1,0 +1,31 @@
+╔══════════════════════════════════════════════╗
+║                REGISTRO DE CAMBIOS           ║
+╚══════════════════════════════════════════════╝
+
+❚❙❘ VERSIÓN 1.0.3
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se estandarizó el nombre de los contenedores de "cuadro" a "card".
+├─• Se crearon nuevas clases semánticas para identificar mejor los contenedores.
+├─• Se implementó un nuevo diseño basado en el sistema de "tarjetas".
+├─• 
+├─• 
+├─• 
+└─• Ajustes menores y optimizaciones generales de código.
+
+❚❙❘ VERSIÓN 1.0.2
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se añadieron vínculos entre la página de "Donar" y la página de Inicio.
+└─• Se unificaron múltiples hojas de estilos en un único archivo para mejorar el rendimiento.
+
+❚❙❘ VERSIÓN 1.0.1
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+└─• Se agregaron componentes a la página de inicio:
+    ├─○ Carrusel de imágenes.
+    ├─○ Botón de inicio de sesión.
+    ├─○ Estructura principal del cuerpo (body).
+    └─○ Pie de página (footer).
+
+❚❙❘ VERSIÓN 1.0
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+└─• Inicialización del repositorio.
+    └─○ Se agregaron los recursos base: index.html, styles.css y script.js.
