@@ -323,3 +323,81 @@ button:active {
 .color-11 {
   color: #616f7f;
 }
+
+
+
+/*Ejemplo tabla en evaluacion*/
+
+/* Estilos generales del contenedor y el título */
+.tabla-contenedor {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Oculta cualquier contenido que se salga de los bordes redondeados */
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f8f9fa; /* Color de fondo del contenedor */
+}
+
+h2 {
+  background-color: #e9ecef; /* Color de fondo del encabezado "Tablero de incidencias" */
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Estilos de la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Elimina el espacio entre los bordes de las celdas */
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #dee2e6; /* Borde inferior para separar las filas */
+}
+
+/* Estilo para los encabezados de la tabla (th) */
+thead th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+  color: #555;
+  white-space: nowrap; /* Evita que el texto se parta en varias líneas */
+}
+
+/* Estilo para las filas impares (blanco) y pares (gris claro) */
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* Filas impares */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Filas pares */
+}
+
+/* Estilo para el botón "Ver más..." */
+.boton-mas {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.boton-mas:hover {
+  background-color: #0056b3;
+}
+
+/* Opcional: para que la tabla sea responsiva en móviles */
+@media (max-width: 768px) {
+  .tabla-responsive {
+    overflow-x: auto;
+  }
+}

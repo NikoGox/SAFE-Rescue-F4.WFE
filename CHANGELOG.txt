@@ -1,6 +1,19 @@
 ╔══════════════════════════════════════════════╗
 ║                REGISTRO DE CAMBIOS           ║
 ╚══════════════════════════════════════════════╝
+❚❙❘ VERSIÓN 1.0.6
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se Agrego una página para incidentes con los componentes básicos (nav-bar,footer)
+├─• Se Agrego una página para registro con los componentes básicos (nav-bar,footer)
+├─• Se Agrego una página para contactanos con los componentes básicos (nav-bar,footer)
+├─• Se elimino sección mapa para el nav-bar 
+├─• Se elimino sección generar reporte para el nav-bar 
+├─• Se elimino sección generar alerta para el nav-bar 
+├─• Se Agrego un elemento básico tipo dropdown de bootstrap para el inicio de sesión
+├─• Se Agrego un elemento tipo tabla de ejemplo para la página de incidentes
+├─• Se remplaza en el footer políticas de seguridad por Donar
+└─• Se ajustan los vínculos a la página de incidentes y registro
+
 
 ❚❙❘ VERSIÓN 1.0.5
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
