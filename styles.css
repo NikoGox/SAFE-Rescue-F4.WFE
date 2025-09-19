@@ -18,6 +18,10 @@
   height: 70px;
 }
 
+.fondo-navbar {
+  height: 70px;
+}
+
  /* este estilo hace que desaparezca la barra de scroll */
 ::-webkit-scrollbar {
   width: 0px;  /* Ancho de la barra de desplazamiento */

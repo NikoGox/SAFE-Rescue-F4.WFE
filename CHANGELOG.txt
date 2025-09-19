@@ -1,14 +1,25 @@
 ╔══════════════════════════════════════════════╗
 ║                REGISTRO DE CAMBIOS           ║
 ╚══════════════════════════════════════════════╝
+❚❙❘ VERSIÓN 1.0.7
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se quitó el boton "Condiciones de uso" del footer
+├─• Se quitó el boton "Ayuda" footer
+├─• Se corrigió el color del apartado "Donar" del navbar 
+├─• ... Se agregó la pestaña de "Donar/"
+├─• Se agregó un fondo para el navbar con el fin de que el contenido se deplace hacia abajo
+├─• Se cambió el nombre de la carpeta "resources" a "assets"
+├─• Se creó la carpeta "src" para almacenar los archivos 
+└─• Se crearon archivos js para los servicios de incidentes y donaciones
+
 ❚❙❘ VERSIÓN 1.0.6
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
-├─• Se Agrego una página para incidentes con los componentes básicos (nav-bar,footer)
-├─• Se Agrego una página para registro con los componentes básicos (nav-bar,footer)
-├─• Se Agrego una página para contactanos con los componentes básicos (nav-bar,footer)
-├─• Se elimino sección mapa para el nav-bar 
-├─• Se elimino sección generar reporte para el nav-bar 
-├─• Se elimino sección generar alerta para el nav-bar 
+├─• Se Agrego una página para incidentes con los componentes básicos (navbar,footer)
+├─• Se Agrego una página para registro con los componentes básicos (navbar,footer)
+├─• Se Agrego una página para contactanos con los componentes básicos (navbar,footer)
+├─• Se elimino sección mapa para el navbar 
+├─• Se elimino sección generar reporte para el navbar 
+├─• Se elimino sección generar alerta para el navbar 
 ├─• Se Agrego un elemento básico tipo dropdown de bootstrap para el inicio de sesión
 ├─• Se Agrego un elemento tipo tabla de ejemplo para la página de incidentes
 ├─• Se remplaza en el footer políticas de seguridad por Donar

@@ -25,7 +25,8 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <div class="logo-brand">
-                <img src="..\resources\sr_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top " id="logo" >
+                <img src="..\assets\sr_logo.png" alt="Logo" width="50" height="50"
+                    class="d-inline-block align-text-top " id="logo">
                 <a class="navbar-brand titulo" href="../home/index.html">SAFE Rescue</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -34,23 +35,52 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-                <form class="d-flex mx-auto" role="search">
-                    <input class="form-control me-2 buscador" id="buscador-navbar" type="search" placeholder="Buscar" aria-label="Search" />
-                </form>
-
                 <div class="navbar-nav ms-auto ">
                     <a class="nav-link color-11" id="text-a-navbar" href="../incidentes/incidentes.html">Incidentes</a>
                     <a class="espaciador-navbar color-10-1">|</a>
                     <a class="nav-link color-11" id="text-a-navbar" href="../contactanos/contactanos.html">Contactanos</a>
                     <a class="espaciador-navbar color-10-1">|</a>
-                    <a href="../donar/donar.html" class="nav-link">Donar</a>
+                    <a class="nav-link color-11" id="text-a-navbar" href="../donar/donar.html" class="nav-link">Donar</a>
 
-                    <a class="nav-link color-11 " href="#"><button class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar Sesión</button></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <button class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar Sesión</button>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <form class="px-4 py-3">
+                                <div class="mb-3">
+                                    <label for="exampleDropdownFormEmail1" class="form-label">Correo</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                        placeholder="email@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">
+                                            Recordar mi información
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../registrarse/registrarse.html">¿No tienes cuenta? Registrate</a>
+                            <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </li>
                 </div>
 
             </div>
         </div>
     </nav>
+
+    <div class="fondo-navbar"></div>
 
     
     <!-- Dato: puedes usar Alt+Enter al buscar un texto para reemplazar en todos lados. -->
@@ -63,14 +93,18 @@
 
     </section>
 
+    <p class="espaciador"></p>
     <footer class="custom-footer py-4 mt-auto">
+
         <div class="container-fluid">
 
             <div class="container-fluid border-bottom">
                 <div class="d-flex justify-content-left align-items-center ">
-                    <img src="..\resources\bomberos_logo.png" alt="Logo" width="200 " height="100"
+                    <img src="..\assets\bomberos_logo.png" alt="Logo" width="200 " height="100"
                         class="d-inline-block align-text-top">
-                    <img src="..\resources\corfo_logo.png" alt="Logo" width="180 " height="100"
+                    <a class="espaciador-navbar color-10-1">|</a>
+
+                    <img src="..\assets\corfo_logo.png" alt="Logo" width="180 " height="100"
                         class="d-inline-block align-text-top">
 
                 </div>
@@ -78,11 +112,9 @@
             </div>
 
             <ul class="nav justify-content-center pb-1 mb-1 ">
-                <li class="nav-item"><a href="..\home\index.html" class="nav-link px-2">Inicio</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link px-2">Inicio</a></li>
                 <li class="nav-item"><a href="../contactanos/contactanos.html" class="nav-link px-2">Contactanos</a></li>
-                <li class="nav-item"><a href="donar.html" class="nav-link px-2">Donar</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2">Condiciones de uso</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2">Ayuda</a></li>
+                <li class="nav-item"><a href="../donar/donar.html" class="nav-link px-2">Donar</a></li>
             </ul>
 
 
