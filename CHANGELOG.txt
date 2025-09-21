@@ -3,6 +3,16 @@
 ╚══════════════════════════════════════════════╝
 ❚❙❘ VERSIÓN 1.0.7
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se corrigió los vínculos de el footer en la página contactanos y donar
+├─• Se agrega formulario para registrarse y también su js (falta ajustarlo)
+├─• Se agrega lógica para regsitrarse en el html, estilo para la hoja de registro e imagen
+├─• Se ordena hoja de estilos css, se deja antigua como styles copy, como respaldo hasta evaluación
+├─• Se agrega hoja de inicio logueado, copiando la pagina de inicio para posteriormente actualizar el inicio de sesión (en evaluación)
+└─• Se agrega imagen para usarse en donaciones
+
+
+❚❙❘ VERSIÓN 1.0.6
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
 ├─• Se quitó el boton "Condiciones de uso" del footer
 ├─• Se quitó el boton "Ayuda" footer
 ├─• Se corrigió el color del apartado "Donar" del navbar 
@@ -12,7 +22,7 @@
 ├─• Se creó la carpeta "src" para almacenar los archivos 
 └─• Se crearon archivos js para los servicios de incidentes y donaciones
 
-❚❙❘ VERSIÓN 1.0.6
+❚❙❘ VERSIÓN 1.0.5
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
 ├─• Se Agrego una página para incidentes con los componentes básicos (navbar,footer)
 ├─• Se Agrego una página para registro con los componentes básicos (navbar,footer)
@@ -26,7 +36,7 @@
 └─• Se ajustan los vínculos a la página de incidentes y registro
 
 
-❚❙❘ VERSIÓN 1.0.5
+❚❙❘ VERSIÓN 1.0.4
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
 ├─• Se cambio el estilo del boton de Iniciar Sesión.
 ├─• Se cambio el nombre de la pestaña de 'Donaciones' a 'Donar'
