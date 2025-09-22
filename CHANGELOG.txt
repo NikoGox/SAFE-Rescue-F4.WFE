@@ -1,6 +1,13 @@
 ╔══════════════════════════════════════════════╗
 ║                REGISTRO DE CAMBIOS           ║
 ╚══════════════════════════════════════════════╝
+❚❙❘ VERSIÓN 1.0.8
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se trabajo en la lógica del js de registrarse
+├─• Se modifico las navbar para que tenga una interaccion de inicio de sesión
+└─• Se realizan modificaciones en la hoja de estilos para reparar error en la hoja de inicio en los margenes
+
+
 ❚❙❘ VERSIÓN 1.0.7
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
 ├─• Se corrigió los vínculos de el footer en la página contactanos y donar

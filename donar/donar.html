@@ -9,6 +9,8 @@
     <title>SAFE Rescue - Donaciones</title>
     <link rel="icon" href="sr_logo.png" type="image/x-icon">
 
+    <script type="text/javascript" src="../src/pages/registrarse.js"></script>
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,25 +40,37 @@
                 <div class="navbar-nav ms-auto ">
                     <a class="nav-link color-11" id="text-a-navbar" href="../incidentes/incidentes.html">Incidentes</a>
                     <a class="espaciador-navbar color-10-1">|</a>
-                    <a class="nav-link color-11" id="text-a-navbar" href="../contactanos/contactanos.html">Contactanos</a>
+                    <a class="nav-link color-11" id="text-a-navbar"
+                        href="../contactanos/contactanos.html">Contactanos</a>
                     <a class="espaciador-navbar color-10-1">|</a>
-                    <a class="nav-link color-11" id="text-a-navbar" href="../donar/donar.html" class="nav-link">Donar</a>
+                    <a class="nav-link color-11" id="text-a-navbar" href="../donar/donar.html"
+                        class="nav-link">Donar</a>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <button class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar Sesión</button>
+                            <!-- Botón de Iniciar Sesión (visible por defecto) -->
+                            <button id="btnIniciarSesion" class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar
+                                Sesión</button>
+
+                            <!-- Botón de Usuario (oculto inicialmente) -->
+                            <button id="btnUsuario" class="boton-usuario text-p-XS color-negro" style="display: none;">
+                                <span id="lblNombre_usu_nav"></span>
+                                <div class="imagen-box-nav">
+                                    <img id="imgPerfilNav" src="../assets/perfil-default.png" alt="Perfil de usuario">
+                                </div>
+                            </button>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <form class="px-4 py-3">
+                            <form class="px-4 py-3" id="loginForm">
                                 <div class="mb-3">
                                     <label for="exampleDropdownFormEmail1" class="form-label">Correo</label>
-                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                    <input type="email" class="form-control" id="loginEmail"
                                         placeholder="email@example.com">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                    <input type="password" class="form-control" id="loginPassword"
                                         placeholder="Password">
                                 </div>
                                 <div class="mb-3">
@@ -70,8 +84,15 @@
                                 <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                             </form>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../registrarse/registrarse.html">¿No tienes cuenta? Registrate</a>
+                            <a class="dropdown-item" href="../registrarse/registrarse.html">¿No tienes cuenta?
+                                Regístrate</a>
                             <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+                            <!-- Opciones para usuario logueado (ocultas inicialmente) -->
+                            <div id="userMenuOptions" style="display: none;">
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../perfil/perfil.html">Mi Perfil</a>
+                                <a class="dropdown-item" href="#" id="logoutButton">Cerrar Sesión</a>
+                            </div>
                         </div>
                     </li>
                 </div>
@@ -82,7 +103,7 @@
 
     <div class="fondo-navbar"></div>
 
-    
+
     <!-- Dato: puedes usar Alt+Enter al buscar un texto para reemplazar en todos lados. -->
 
     <section class="card-base card-contenido">
@@ -113,7 +134,8 @@
 
             <ul class="nav justify-content-center pb-1 mb-1 ">
                 <li class="nav-item"><a href="../home/index.html" class="nav-link px-2">Inicio</a></li>
-                <li class="nav-item"><a href="../contactanos/contactanos.html" class="nav-link px-2">Contactanos</a></li>
+                <li class="nav-item"><a href="../contactanos/contactanos.html" class="nav-link px-2">Contactanos</a>
+                </li>
                 <li class="nav-item"><a href="donar.html" class="nav-link px-2">Donar</a></li>
             </ul>
 

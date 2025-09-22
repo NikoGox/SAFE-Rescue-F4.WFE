@@ -9,6 +9,7 @@
     <title>SAFE Rescue - Pagina principal</title>
     <link rel="icon" href="sr_logo.png" type="image/x-icon">
 
+    <script type="text/javascript" src="../src/pages/registrarse.js"></script>
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,17 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <button class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar Sesión</button>
+                            <!-- Botón de Iniciar Sesión (visible por defecto) -->
+                            <button id="btnIniciarSesion" class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar
+                                Sesión</button>
+
+                            <!-- Botón de Usuario (oculto inicialmente) -->
+                            <button id="btnUsuario" class="boton-usuario text-p-XS color-blanco" style="display: none;">
+                                <span id="lblNombre_usu_nav"></span>
+                                <div class="imagen-box-nav">
+                                    <img id="imgPerfilNav" src="../assets/perfil-default.png" alt="Perfil de usuario">
+                                </div>
+                            </button>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <form class="px-4 py-3">

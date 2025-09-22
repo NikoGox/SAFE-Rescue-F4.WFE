@@ -23,6 +23,7 @@
   --color-3f4e5f: #3f4e5f;
   --color-error: #dc3545;
   --color-success: #28a745;
+  --color-perfil-navbar:#D9F7FF;
   --shadow-light: 2px 2px 6px rgba(0, 0, 0, 0.1);
   --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-heavy: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -126,6 +127,38 @@ button:active {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Estilos para el botón de usuario */
+.boton-usuario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #D9F7FF;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #0791E6;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.imagen-box-nav {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+}
+
+.imagen-box-nav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ajustes para el dropdown de usuario */
+.dropdown-menu {
+  min-width: 250px;
+}
+
 /* ===== CARRUSEL ===== */
 #carouselExampleSlidesOnly {
   margin-bottom: 20px;
@@ -162,7 +195,8 @@ button:active {
   color: var(--color-black);
   height: auto;
   width: 100%;
-  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: var(--border-radius-lg);
   padding-left: 200px;
   padding-right: 200px;
@@ -217,7 +251,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 0; 
+  min-width: 0;
   overflow-y: auto;
 }
 
@@ -464,40 +498,47 @@ tbody tr:nth-child(even) {
 
 /* ===== TIPOGRAFÍAS ===== */
 .text-p-XS {
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 14px;
   color: var(--color-black);
 }
 
 .text-p-S {
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: semi-bold;
   color: var(--color-black);
 }
 
 #text-a-navbar {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px;
 }
 
 .text-p-L {
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   color: var(--color-black);
 }
 
 .text-p-L_Negrita {
+  font-family: "Montserrat", sans-serif;
   font-weight: semi-medium;
   font-size: 17px;
   color: var(--color-black);
 }
 
 .titulo-L {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 40px;
   color: var(--color-3f4e5f);
 }
 
 .titulo-L_Negrita {
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: semi-bold;
   color: var(--color-secondary);
@@ -522,6 +563,10 @@ tbody tr:nth-child(even) {
 
 .color-11 {
   color: var(--color-gray);
+}
+
+.color-15 {
+  color:var(--color-perfil-navbar);
 }
 
 /* ===== UTILIDADES ===== */
