@@ -98,13 +98,79 @@
 
     <!-- Dato: puedes usar Alt+Enter al buscar un texto para reemplazar en todos lados. -->
 
-    <section class="card-base card-contenido">
+    <div class="contenedor-principal">
+        <div class="seccion-formulario">
+            <div class="logo-formulario">
+                <img src="..\assets\sr_logo.png" alt="SAFE Rescue Logo">
+            </div>
 
-        <h5>Aqui va el contenido
-        </h5>
+            <h1 class="titulo-formulario">Contáctanos</h1>
+            <p class="subtitulo-formulario">Envíanos un mensaje y te responderemos a la brevedad.</p>
 
+            <form class="form" id="contactForm" action="">
+                <div class="form-group-registro">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" class="form-control-registro" id="nombre" placeholder="Juan Pérez González"
+                        required />
+                    <p class="mensajeError"></p>
+                </div>
 
-    </section>
+                <div class="form-group-registro">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" class="form-control-registro" id="correo" placeholder="tu.correo@ejemplo.com"
+                        required />
+                    <p class="mensajeError"></p>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group-registro">
+                            <label for="telefono">Numero Teléfono</label>
+                            <input type="tel" class="form-control-registro" id="telefono" placeholder="912345678"
+                                required />
+                            <p class="mensajeError"></p>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group-registro">
+                            <label for="direccion">Dirección</label>
+                            <input type="text" class="form-control-registro" id="direccion"
+                                placeholder="Calle 123, Comuna" required />
+                            <p class="mensajeError"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group-registro">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control-registro" id="mensaje" rows="5"
+                        placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <p class="mensajeError"></p>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="autofillCheckbox" name="autofill">
+                    <label for="autofillCheckbox">Usar mis datos de perfil</label>
+                </div>
+
+                <button type="submit" class="btn-registro">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <div class="seccion-imagen">
+            <div class="contenido-imagen">
+                <h2 class="titulo-imagen">Estamos aquí para ayudarte</h2>
+                <p class="texto-imagen">Si tienes alguna duda o sugerencia, no dudes en contactarnos. Tu
+                    retroalimentación es muy valiosa para nosotros.</p>
+                <ul class="beneficios-lista">
+                    <li>Resuelve tus dudas</li>
+                    <li>Envía sugerencias</li>
+                    <li>Reporta errores</li>
+                    <li>Colabora con nosotros</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <p class="espaciador"></p>
     <footer class="custom-footer py-4 mt-auto">
@@ -139,6 +205,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="../src/pages/contactanos.js"></script>
     <script type="text/javascript" src="../src/pages/registrarse.js"></script>
 </body>
 

@@ -1,286 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFE Rescue - Incidentes</title>
+    <link rel="icon" href="..\assets\sr_logo.png" type="image/x-icon">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAFE Rescue - Incidentes</title>
-  <link rel="icon" href="..\assets\sr_logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-  <link rel="preload" href="..\styles.css" as="style">
-  <link rel="stylesheet" href="..\styles.css">
-
+    <link rel="preload" href="..\styles.css" as="style">
+    <link rel="stylesheet" href="..\styles.css">
 </head>
 
 <body class="cuerpo">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <div class="logo-brand">
-        <img src="..\assets\sr_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top "
-          id="logo">
-        <a class="navbar-brand titulo" href="../home/index.html">SAFE Rescue</a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-        <div class="navbar-nav ms-auto ">
-          <a class="nav-link color-11 text-a-navbar" href="../incidentes/incidentes.html">Incidentes</a>
-          <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
-          <a class="nav-link color-11 text-a-navbar" href="../contactanos/contactanos.html">Contactanos</a>
-          <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
-          <a class="nav-link color-11 text-a-navbar" href="../donar/donar.html" class="nav-link">Donar</a>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <button id="btnIniciarSesion" class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar Sesión</button>
-
-              <button id="btnUsuario" class="boton-usuario text-p-XS color-negro" style="display: none;">
-                <span id="lblNombre_usu_nav"></span>
-                <div class="imagen-box-nav">
-                  <img id="imgPerfilNav" src="../assets/perfil-default.png" alt="Perfil de usuario">
-                </div>
-              </button>
-            </a>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <div id="loginDropdownContent">
-                <form class="px-4 py-3" id="loginForm">
-                  <div class="mb-3">
-                    <label for="loginEmail" class="form-label">Correo</label>
-                    <input type="email" class="form-control" id="loginEmail" placeholder="email@example.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="loginPassword" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="loginPassword" placeholder="Password">
-                  </div>
-                  <p id="loginErrorMessage" style="display: none;"></p>
-
-                  <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../registrarse/registrarse.html">¿No tienes cuenta? Regístrate</a>
-                <a class="dropdown-item" href="#" id="forgotPassword">¿Olvidaste tu contraseña?</a>
-              </div>
-
-              <div id="userMenuOptions" style="display: none;">
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../perfil/perfil.html">Mi Perfil</a>
-                <a class="dropdown-item" href="#" id="logoutButton">Cerrar Sesión</a>
-              </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="logo-brand">
+                <img src="..\assets\sr_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top " id="logo">
+                <a class="navbar-brand titulo" href="../home/index.html">SAFE Rescue</a>
             </div>
-          </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto ">
+                    <a class="nav-link color-11 text-a-navbar" href="../incidentes/incidentes.html">Incidentes</a>
+                    <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
+                    <a class="nav-link color-11 text-a-navbar" href="../contactanos/contactanos.html">Contactanos</a>
+                    <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
+                    <a class="nav-link color-11 text-a-navbar" href="../donar/donar.html" class="nav-link">Donar</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button id="btnIniciarSesion" class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar Sesión</button>
+                            <button id="btnUsuario" class="boton-usuario text-p-XS color-negro" style="display: none;">
+                                <span id="lblNombre_usu_nav"></span>
+                                <div class="imagen-box-nav">
+                                    <img id="imgPerfilNav" src="../assets/perfil-default.png" alt="Perfil de usuario">
+                                </div>
+                            </button>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <div id="loginDropdownContent">
+                                <form class="px-4 py-3" id="loginForm">
+                                    <div class="mb-3">
+                                        <label for="loginEmail" class="form-label">Correo</label>
+                                        <input type="email" class="form-control" id="loginEmail" placeholder="email@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="loginPassword" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                                    </div>
+                                    <p id="loginErrorMessage" style="display: none;"></p>
+                                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../registrarse/registrarse.html">¿No tienes cuenta? Regístrate</a>
+                                <a class="dropdown-item" href="#" id="forgotPassword">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            <div id="userMenuOptions" style="display: none;">
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../perfil/perfil.html">Mi Perfil</a>
+                                <a class="dropdown-item" href="#" id="logoutButton">Cerrar Sesión</a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
         </div>
+    </nav>
 
-      </div>
-    </div>
-  </nav>
+    <div class="fondo-navbar"></div>
 
-  <div class="fondo-navbar"></div>
+    <section class="card-base card-contenido ">
+        <p class="espaciador-blanco">Hola soy un espaciador</p>
+        <h1>Incidentes</h1>
 
-  <section class="card-base card-contenido ">
-    <p class="espaciador-blanco">Hola soy un espaciador</p>
+        <div class="tabla-contenedor">
+            <h2>Tablero de incidencias</h2>
+            <button id="showFormBtn" class="boton-mas">Añadir Incidente</button>
 
-    <h1>Incidentes</h1>
+            <form id="addIncidentForm" class="add-incident-form" style="display: none;">
+                <h3>Añadir Nuevo Incidente</h3>
+                <label for="incidentType">Tipo de Incidente:</label>
+                <input type="text" id="incidentType" required>
 
-    <div class="tabla-contenedor">
-      <h2>Tablero de incidencias</h2>
-      <div class="tabla-responsive">
-        <table>
-          <thead>
-            <tr>
-              <th>Id Incidente</th>
-              <th>Tipo de incidente</th>
-              <th>Descripción</th>
-              <th>Ubicación</th>
-              <th>Fecha y hora</th>
-              <th>Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>222</td>
-              <td>Incendio</td>
-              <td>Incendio en una casa</td>
-              <td>Renca, El Montijo 2212</td>
-              <td>03/09/2024 22:50</td>
-              <td>En progreso</td>
-            </tr>
-            <tr>
-              <td>221</td>
-              <td>Explosión</td>
-              <td>Explosión de transf...</td>
-              <td>Renca, El Montijo 2212</td>
-              <td>03/09/2024 14:20</td>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <td>220</td>
-              <td>Accidente</td>
-              <td>Atropellamiento</td>
-              <td>Av. Vicuña Mackenna 6100</td>
-              <td>03/09/2024 13:15</td>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <td>219</td>
-              <td>Accidente</td>
-              <td>Colisión múltiple en vía</td>
-              <td>Autopista Central, Santiago</td>
-              <td>03/09/2024 12:50</td>
-              <td>En progreso</td>
-            </tr>
-            <tr>
-              <td>218</td>
-              <td>Fuga de gas</td>
-              <td>Fuga en cocina res...</td>
-              <td>Av. Providencia 1234, Providencia</td>
-              <td>03/09/2024 12:25</td>
-              <td>Localizado</td>
-            </tr>
-            <tr>
-              <td>217</td>
-              <td>Incendio</td>
-              <td>Fuego en almacén...</td>
-              <td>Av. Santa Rosa 1300, Santiago</td>
-              <td>03/09/2024 12:00</td>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <td>216</td>
-              <td>Fuga de gas</td>
-              <td>Fuga en instituto</td>
-              <td>Huechuraba, la calle 2212</td>
-              <td>03/09/2024 11:50</td>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <td>215</td>
-              <td>Accidente</td>
-              <td>Colisión múltiple en vía</td>
-              <td>Av. Américo Vespucio, Las Condes</td>
-              <td>03/09/2024 09:30</td>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <td>214</td>
-              <td>Derrumbe</td>
-              <td>Colapso de estructura</td>
-              <td>Av. Santa Rosa 1300, Santiago</td>
-              <td>03/09/2024 09:50</td>
-              <td>En progreso</td>
-            </tr>
-            <tr>
-              <td>213</td>
-              <td>Incendio</td>
-              <td>Incendio en una casa</td>
-              <td>Av. Macul 4700, Macul</td>
-              <td>03/09/2024 09:50</td>
-              <td>En progreso</td>
-            </tr>
-            <tr>
-              <td>212</td>
-              <td>Derrame químico</td>
-              <td>Derrame de líquidos</td>
-              <td>Av. Américo Vespucio Las Condes</td>
-              <td>03/09/2024 09:22</td>
-              <td>En progreso</td>
-            </tr>
-            <tr>
-              <td>211</td>
-              <td>Incendio</td>
-              <td>Incendio forestal</td>
-              <td>Av. La Florida 9600, La Florida</td>
-              <td>03/09/2024 08:57</td>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <td>210</td>
-              <td>Accidente</td>
-              <td>Atropellamiento</td>
-              <td>Av. Quilín 4500, Ñuñoa</td>
-              <td>03/09/2024 08:55</td>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <td>209</td>
-              <td>Explosión</td>
-              <td>Explosión de horno</td>
-              <td>Av. Manquehue Norte 1400, Santiago</td>
-              <td>03/09/2024 08:22</td>
-              <td>Cerrado</td>
-            </tr>
-            <tr>
-              <td>208</td>
-              <td>Desplome</td>
-              <td>Árbol caído</td>
-              <td>Av. Irarrazaval 5200, Ñuñoa</td>
-              <td>03/09/2024 06:52</td>
-              <td>En progreso</td>
-            </tr>
-            <tr>
-              <td>207</td>
-              <td>Explosión</td>
-              <td>Explosión de tuberías</td>
-              <td>Av. Los Leones 2200, Providencia</td>
-              <td>03/09/2024 05:40</td>
-              <td>Cerrado</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <button class="boton-mas">Ver más...</button>
-    </div>
-  </section>
+                <label for="incidentDescription">Descripción:</label>
+                <textarea id="incidentDescription" required></textarea>
 
-  <p class="espaciador"></p>
-  <footer class="custom-footer py-4 mt-auto">
+                <label for="incidentLocation">Ubicación:</label>
+                <input type="text" id="incidentLocation" required>
 
-    <div class="container-fluid">
+                <label for="incidentImageUrl">URL de la imagen:</label>
+                <input type="url" id="incidentImageUrl" placeholder="ej: https://example.com/imagen.jpg" required>
 
-      <div class="container-fluid border-bottom">
-        <div class="d-flex justify-content-left align-items-center ">
-          <img src="..\assets\bomberos_logo.png" alt="Logo" width="200 " height="100"
-            class="d-inline-block align-text-top">
-          <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
+                <div class="form-buttons">
+                    <button type="submit">Añadir</button>
+                    <button type="button" id="cancelFormBtn">Cancelar</button>
+                </div>
+            </form>
 
-          <img src="..\assets\corfo_logo.png" alt="Logo" width="180 " height="100"
-            class="d-inline-block align-text-top">
-
+            <div class="tabla-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id Incidente</th>
+                            <th>Tipo</th>
+                            <th>Ubicación</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="incidentTableBody">
+                        </tbody>
+                </table>
+            </div>
+            <button id="btnActualizar" class="boton-mas">Actualizar tabla</button>
         </div>
-        <p class="text-end mb-0 me-3">. 2025 SAFE Rescue</p><br>
-      </div>
+    </section>
 
-      <ul class="nav justify-content-center pb-1 mb-1 ">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2">Inicio</a></li>
-        <li class="nav-item"><a href="../contactanos/contactanos.html" class="nav-link px-2">Contactanos</a></li>
-        <li class="nav-item"><a href="../donar/donar.html" class="nav-link px-2">Donar</a></li>
-      </ul>
+    <p class="espaciador"></p>
+    <footer class="custom-footer py-4 mt-auto">
+        <div class="container-fluid">
+            <div class="container-fluid border-bottom">
+                <div class="d-flex justify-content-left align-items-center ">
+                    <img src="..\assets\bomberos_logo.png" alt="Logo" width="200 " height="100" class="d-inline-block align-text-top">
+                    <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
+                    <img src="..\assets\corfo_logo.png" alt="Logo" width="180 " height="100" class="d-inline-block align-text-top">
+                </div>
+                <p class="text-end mb-0 me-3">. 2025 SAFE Rescue</p><br>
+            </div>
+            <ul class="nav justify-content-center pb-1 mb-1 ">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2">Inicio</a></li>
+                <li class="nav-item"><a href="../contactanos/contactanos.html" class="nav-link px-2">Contactanos</a></li>
+                <li class="nav-item"><a href="../donar/donar.html" class="nav-link px-2">Donar</a></li>
+            </ul>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 
-
-    </div>
-  </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
-  <script type="text/javascript" src="../src/pages/registrarse.js"></script>
+    <script type="text/javascript" src="../src/pages/incidentes.js"></script>
+    <script type="text/javascript" src="../src/pages/registrarse.js"></script>
 </body>
-
 </html>

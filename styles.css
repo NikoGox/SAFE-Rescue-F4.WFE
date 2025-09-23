@@ -23,7 +23,7 @@
   --color-3f4e5f: #3f4e5f;
   --color-error: #dc3545;
   --color-success: #28a745;
-  --color-perfil-navbar:#D9F7FF;
+  --color-perfil-navbar: #D9F7FF;
   --shadow-light: 2px 2px 6px rgba(0, 0, 0, 0.1);
   --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.1);
   --shadow-heavy: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -272,7 +272,7 @@ h6 {
 .contenido-imagen {
   text-align: center;
   max-width: 300px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(24, 52, 64, 0.7);
   padding: 1.5rem;
   border-radius: 10px;
 }
@@ -415,18 +415,18 @@ h6 {
   box-shadow: var(--shadow-medium);
   overflow: hidden;
   font-family: Arial, sans-serif;
-  max-width: 800px;
+  max-width: auto;
   margin: 20px auto;
-  background-color: #f8f9fa;
+  background-color: var(--color-3f4e5f);
 }
 
 .tabla-contenedor h2 {
-  background-color: #e9ecef;
+  background-color: var(--color-3f4e5f);
   padding: 15px 20px;
   margin: 0;
   font-size: 20px;
   font-weight: 600;
-  color: #333;
+  color: var(--color-white);
 }
 
 table {
@@ -461,7 +461,7 @@ tbody tr:nth-child(even) {
   width: 150px;
   padding: 10px;
   margin: 20px auto;
-  background-color: #007bff;
+  background-color: var(--color-primary);
   color: var(--color-white);
   border: none;
   border-radius: 5px;
@@ -472,6 +472,160 @@ tbody tr:nth-child(even) {
 .boton-mas:hover {
   background-color: #0056b3;
 }
+
+/* Estilos para los botones de la página de incidentes */
+/* Reutilizamos la clase boton-mas y añadimos un estilo para el nuevo botón */
+.boton-mas,
+#showFormBtn,
+#btnActualizar {
+  /* Aquí se mantienen los estilos que ya definiste para boton-mas */
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.boton-mas:hover,
+#showFormBtn:hover,
+#btnActualizar:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Estilos para el nuevo formulario de añadir incidente */
+.add-incident-form {
+  background-color: var(--color-white);
+  /* Reutilizamos un color base */
+  padding: 2rem;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-medium);
+  margin: 2rem auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.add-incident-form h3 {
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+/* Estilos para los campos de entrada y textarea */
+.add-incident-form input[type="text"],
+.add-incident-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: var(--border-radius-sm);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.add-incident-form input[type="text"]:focus,
+.add-incident-form textarea:focus {
+  border-color: var(--color-primary);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(32, 163, 216, 0.25);
+}
+
+/* Estilos para los labels del formulario */
+.add-incident-form label {
+  font-weight: 600;
+  color: var(--color-secondary);
+  display: block;
+}
+
+/* Estilos para los botones dentro del formulario */
+.add-incident-form button {
+  /* Reutilizamos los estilos del botón de registro */
+  border: none;
+  color: var(--color-white);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-sm);
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 1px 1px 4px #555454;
+  text-shadow: 1px 1px 1px #555454;
+  cursor: pointer;
+}
+
+.add-incident-form button[type="submit"] {
+  background-color: var(--color-primary);
+}
+
+.add-incident-form button[type="submit"]:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Estilo para el botón de cancelar */
+#cancelFormBtn {
+  background-color: var(--color-gray);
+}
+
+#cancelFormBtn:hover {
+  background-color: #555454;
+}
+
+/* Estilo para el contenedor de los botones de acción */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Estilo del "Ver más..." */
+.boton-mas {
+  text-decoration: none;
+}
+
+/* Estilos para las filas de detalles */
+.incident-details td {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.details-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.details-text {
+  flex: 1;
+}
+
+.details-image img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el botón de "Ver Detalles" */
+.expand-btn {
+  padding: 5px 10px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.expand-btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+
 
 /* ===== FOOTER ===== */
 .custom-footer {
@@ -567,7 +721,7 @@ tbody tr:nth-child(even) {
 }
 
 .color-15 {
-  color:var(--color-perfil-navbar);
+  color: var(--color-perfil-navbar);
 }
 
 /* ===== UTILIDADES ===== */

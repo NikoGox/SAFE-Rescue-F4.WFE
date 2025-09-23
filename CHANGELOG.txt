@@ -1,13 +1,26 @@
 ╔══════════════════════════════════════════════╗
 ║                REGISTRO DE CAMBIOS           ║
 ╚══════════════════════════════════════════════╝
-❚❙❘ VERSIÓN 1.0.10
+❚❙❘ VERSIÓN 1.0.11
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se crea el formulario de contactanos
+├─• Se crea la lógica del formulario contactanos en contactanos.js
+├─• Se cambia telefono a numero telefono
+├─• Se modifica la tabla de incidentes
+├─• Se crea la lógica del formulario incidentes en incidentes.js
+├─• Se crea una opción para crear incidentes
+├─• Se crea una opción para editar incidentes
+├─• Se crean menu desplegables por incidentes
 ├─• Se crea la pagina perfil.html
+├─• Se comenta el link de ya tienes cuenta en la página de registrarse
 ├─• Se agrega condicionales para optimizar registrarse.js segun la pagina que consuma el js
 ├─• Se agrega una funcionalidad en registrarse.js para la sección del dropdown de incio sesión, de ¿Olvidaste tu contraseña?
 └─• Se realizan modificaciones en registrarse.js para poder incluir la logica de perfil.html
 
+
+❚❙❘ VERSIÓN 1.0.10
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+*Commit erroneo
 
 ❚❙❘ VERSIÓN 1.0.9
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺

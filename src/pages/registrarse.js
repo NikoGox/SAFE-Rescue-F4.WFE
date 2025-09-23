@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Definimos las páginas que usan la lógica de inicio de sesión
-    const loginPages = ['index.html', 'incidentes.html', 'contactanos.html', 'donar.html'];
+    const loginPages = ['index.html', 'incidentes.html', 'contactanos.html', 'donar.html','contactanos.html'];
 
     // --- LÓGICA COMPARTIDA POR LAS PÁGINAS CON MENÚ DE INICIO DE SESIÓN ---
     if (loginPages.some(page => window.location.pathname.includes(page))) {
