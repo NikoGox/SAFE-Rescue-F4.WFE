@@ -1,6 +1,14 @@
 ╔══════════════════════════════════════════════╗
 ║                REGISTRO DE CAMBIOS           ║
 ╚══════════════════════════════════════════════╝
+❚❙❘ VERSIÓN 1.0.10
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se crea la pagina perfil.html
+├─• Se agrega condicionales para optimizar registrarse.js segun la pagina que consuma el js
+├─• Se agrega una funcionalidad en registrarse.js para la sección del dropdown de incio sesión, de ¿Olvidaste tu contraseña?
+└─• Se realizan modificaciones en registrarse.js para poder incluir la logica de perfil.html
+
+
 ❚❙❘ VERSIÓN 1.0.9
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
 ├─• Se corrige error en inicio sesión del index
