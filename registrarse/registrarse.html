@@ -2,14 +2,10 @@
 <html lang="en">
 
 <head>
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="stylesheet" href="..\styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAFE Rescue - Registrarse</title>
-    <link rel="icon" href="sr_logo.png" type="image/x-icon">
-
-    <script type="text/javascript" src="../src/pages/registrarse.js"></script>
+    <link rel="icon" href="..\assets\sr_logo.png" type="image/x-icon">
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +16,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preload" href="..\styles.css" as="style">
+    <link rel="stylesheet" href="..\styles.css">
+
+
 </head>
 
 <body class="cuerpo">
@@ -37,22 +38,18 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
                 <div class="navbar-nav ms-auto ">
-                    <a class="nav-link color-11" id="text-a-navbar" href="../incidentes/incidentes.html">Incidentes</a>
-                    <a class="espaciador-navbar color-10-1">|</a>
-                    <a class="nav-link color-11" id="text-a-navbar"
-                        href="../contactanos/contactanos.html">Contactanos</a>
-                    <a class="espaciador-navbar color-10-1">|</a>
-                    <a class="nav-link color-11" id="text-a-navbar" href="../donar/donar.html"
-                        class="nav-link">Donar</a>
+                    <a class="text-a-navbar nav-link color-11" href="../incidentes/incidentes.html">Incidentes</a>
+                    <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
+                    <a class="text-a-navbar nav-link color-11" href="../contactanos/contactanos.html">Contactanos</a>
+                    <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
+                    <a class="nav-link color-11 text-a-navbar" href="../donar/donar.html" class="nav-link">Donar</a>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <!-- Botón de Iniciar Sesión (visible por defecto) -->
                             <button id="btnIniciarSesion" class="boton-iniciar-sesion text-p-XS color-blanco">Iniciar
                                 Sesión</button>
 
-                            <!-- Botón de Usuario (oculto inicialmente) -->
                             <button id="btnUsuario" class="boton-usuario text-p-XS color-negro" style="display: none;">
                                 <span id="lblNombre_usu_nav"></span>
                                 <div class="imagen-box-nav">
@@ -61,32 +58,28 @@
                             </button>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <form class="px-4 py-3" id="loginForm">
-                                <div class="mb-3">
-                                    <label for="exampleDropdownFormEmail1" class="form-label">Correo</label>
-                                    <input type="email" class="form-control" id="loginEmail"
-                                        placeholder="email@example.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" id="loginPassword"
-                                        placeholder="Password">
-                                </div>
-                                <div class="mb-3">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                        <label class="form-check-label" for="dropdownCheck">
-                                            Recordar mi información
-                                        </label>
+                            <div id="loginDropdownContent">
+                                <form class="px-4 py-3" id="loginForm">
+                                    <div class="mb-3">
+                                        <label for="loginEmail" class="form-label">Correo</label>
+                                        <input type="email" class="form-control" id="loginEmail"
+                                            placeholder="email@example.com">
                                     </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                            </form>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../registrarse/registrarse.html">¿No tienes cuenta?
-                                Regístrate</a>
-                            <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
-                            <!-- Opciones para usuario logueado (ocultas inicialmente) -->
+                                    <div class="mb-3">
+                                        <label for="loginPassword" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="loginPassword"
+                                            placeholder="Password">
+                                    </div>
+                                    <p id="loginErrorMessage" style="display: none;"></p>
+
+                                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../registrarse/registrarse.html">¿No tienes cuenta?
+                                    Regístrate</a>
+                                <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+                            </div>
+
                             <div id="userMenuOptions" style="display: none;">
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../perfil/perfil.html">Mi Perfil</a>
@@ -104,7 +97,6 @@
 
     <section class="card-base card-contenido">
         <div class="contenedor-principal">
-            <!-- Sección de formulario a la izquierda (más ancha) -->
             <div class="seccion-formulario">
                 <div class="logo-formulario">
                     <img src="..\assets\sr_logo.png" alt="SAFE Rescue Logo">
@@ -118,7 +110,8 @@
                         <div class="form-col">
                             <div class="form-group-registro">
                                 <label for="rut">RUT</label>
-                                <input type="text" class="form-control-registro" id="rut" placeholder="12.345.678-9" />
+                                <input type="text" class="form-control-registro" id="rut" placeholder="12.345.678-9"
+                                    required />
                                 <p class="mensajeError"></p>
                             </div>
                         </div>
@@ -126,7 +119,7 @@
                             <div class="form-group-registro">
                                 <label for="nombre">Nombre Completo</label>
                                 <input type="text" class="form-control-registro" id="nombre"
-                                    placeholder="Juan Pérez González" />
+                                    placeholder="Juan Pérez González" required />
                                 <p class="mensajeError"></p>
                             </div>
                         </div>
@@ -135,7 +128,7 @@
                     <div class="form-group-registro">
                         <label for="correo">Correo Electrónico</label>
                         <input type="email" class="form-control-registro" id="correo"
-                            placeholder="tu.correo@ejemplo.com" />
+                            placeholder="tu.correo@ejemplo.com" required />
                         <p class="mensajeError"></p>
                     </div>
 
@@ -144,14 +137,15 @@
                             <div class="form-group-registro">
                                 <label for="direccion">Dirección</label>
                                 <input type="text" class="form-control-registro" id="direccion"
-                                    placeholder="Calle 123, Comuna" />
+                                    placeholder="Calle 123, Comuna" required />
                                 <p class="mensajeError"></p>
                             </div>
                         </div>
                         <div class="form-col">
                             <div class="form-group-registro">
                                 <label for="telefono">Teléfono</label>
-                                <input type="tel" class="form-control-registro" id="telefono" placeholder="912345678" />
+                                <input type="tel" class="form-control-registro" id="telefono" placeholder="912345678"
+                                    required />
                                 <p class="mensajeError"></p>
                             </div>
                         </div>
@@ -160,7 +154,7 @@
                     <div class="form-group-registro">
                         <label for="nombre_usu">Nombre de Usuario</label>
                         <input type="text" class="form-control-registro" id="nombre_usu"
-                            placeholder="Elige un nombre de usuario" />
+                            placeholder="Elige un nombre de usuario" required />
                         <p class="mensajeError"></p>
                     </div>
 
@@ -168,8 +162,8 @@
                         <div class="form-col">
                             <div class="form-group-registro">
                                 <label for="contrasena">Contraseña</label>
-                                <input type="password" class="form-control-registro" id=" "
-                                    placeholder="Crea una contraseña segura" />
+                                <input type="password" class="form-control-registro" id="contrasena"
+                                    placeholder="Crea una contraseña segura" required />
                                 <p class="mensajeError"></p>
                             </div>
                         </div>
@@ -177,20 +171,16 @@
                             <div class="form-group-registro">
                                 <label for="confirmar_contrasena">Confirmar Contraseña</label>
                                 <input type="password" class="form-control-registro" id="confirmar_contrasena"
-                                    placeholder="Repite tu contraseña" />
+                                    placeholder="Repite tu contraseña" required />
                                 <p class="mensajeError"></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="checkbox-container">
-                        <input type="checkbox" id="notificaciones" name="notificaciones">
-                        <label for="notificaciones">Deseo recibir notificaciones sobre incidentes y novedades</label>
-                    </div>
-
-                    <div class="checkbox-container">
                         <input type="checkbox" id="terminos" name="terminos" required>
                         <label for="terminos">Acepto los términos y condiciones del servicio</label>
+                        <p class="mensajeError"></p>
                     </div>
 
                     <button type="submit" class="btn-registro">Crear Cuenta</button>
@@ -203,7 +193,6 @@
                 </form>
             </div>
 
-            <!-- Sección de imagen a la derecha (más estrecha) -->
             <div class="seccion-imagen">
                 <div class="contenido-imagen">
                     <h2 class="titulo-imagen">Únete a nuestra comunidad</h2>
@@ -229,11 +218,11 @@
 
             <div class="container-fluid border-bottom">
                 <div class="d-flex justify-content-left align-items-center ">
-                    <img src="..\assets\bomberos_logo.png" alt="Logo" width="200 " height="100"
+                    <img src="..\assets\bomberos_logo.png" alt="Logo Bomberos" width="200 " height="100"
                         class="d-inline-block align-text-top">
-                    <a class="espaciador-navbar color-10-1">|</a>
+                    <span class="espaciador-navbar color-10-1" aria-hidden="true">|</span>
 
-                    <img src="..\assets\corfo_logo.png" alt="Logo" width="180 " height="100"
+                    <img src="..\assets\corfo_logo.png" alt="Logo Corfo" width="180 " height="100"
                         class="d-inline-block align-text-top">
 
                 </div>
@@ -253,6 +242,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../src/pages/registrarse.js"></script>
 </body>
 
 </html>

@@ -233,6 +233,7 @@ h6 {
 }
 
 /* ===== FORMULARIO DE REGISTRO ===== */
+
 .contenedor-principal {
   display: flex;
   width: 100%;
@@ -258,7 +259,7 @@ h6 {
 .seccion-imagen {
   flex: 0 0 auto;
   width: 40%;
-  background: url('../SAFE-Rescue-F4.WFE/assets/registrarse.png') no-repeat center center;
+  background: url('assets/registrarse.png') no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -511,9 +512,9 @@ tbody tr:nth-child(even) {
   color: var(--color-black);
 }
 
-#text-a-navbar {
+.text-a-navbar {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-size: 15px;
 }
 

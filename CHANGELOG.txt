@@ -1,12 +1,23 @@
 ╔══════════════════════════════════════════════╗
 ║                REGISTRO DE CAMBIOS           ║
 ╚══════════════════════════════════════════════╝
+❚❙❘ VERSIÓN 1.0.9
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
+├─• Se corrige error en inicio sesión del index
+├─• Se agregan fotografias para usuarios Rubén y Ezequiel
+├─• Se realizan cambios en registrarse.js paraque guarde los usuarios registrados
+├─• Se realizan cambios en registrarse.js para arreglar validación en registro
+├─• Correción de dirección de imagen de página de registro
+├─• Se modifican la etiqueta de los separadores de navbar (|) de <a> por <span> 
+├─• Correción de errores de enlaces en el head
+└─• texto-a-navbar modificado de id a class, dentro de hoja de estilos y en las navbar del documento
+
+
 ❚❙❘ VERSIÓN 1.0.8
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
 ├─• Se trabajo en la lógica del js de registrarse
 ├─• Se modifico las navbar para que tenga una interaccion de inicio de sesión
 └─• Se realizan modificaciones en la hoja de estilos para reparar error en la hoja de inicio en los margenes
-
 
 ❚❙❘ VERSIÓN 1.0.7
 ⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺
